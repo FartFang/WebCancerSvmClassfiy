@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+    <form method="post" action="post.html">
+        {% csrf_token %}
+        <input type="text" name="str">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>{{ rlt }}</p>
+</body>
+</html>
